@@ -15,10 +15,10 @@ router.get('/', (req, res) => {
             })
             .catch((err) => {
                 console.log(`$err`);
-                res.sendStatus(500);
+                res.sendStatus(403);
             })
     } else {
-        res.sendStatus(500);
+        res.sendStatus(403);
     }
 });
 
